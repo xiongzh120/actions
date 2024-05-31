@@ -1,10 +1,11 @@
 name: ci
 
 on:
-  schedule:
-    - cron: "*/3 * * * *"
-  workflow_dispatch: "*/3 * * * *"
-
+   schedule:
+    - cron: "0 1 * * *"
+    - cron: "0 5 * * *"
+    - cron: "0 10 * * *"
+  workflow_dispatch:
 jobs:
   autogreen:
     runs-on: ubuntu-latest
