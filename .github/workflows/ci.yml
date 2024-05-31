@@ -3,7 +3,7 @@ name: ci
 on:
   schedule:
     - cron: "*/3 * * * *"
-  workflow_dispatch: 
+  workflow_dispatch: "*/3 * * * *"
 
 jobs:
   autogreen:
